@@ -3,8 +3,7 @@ Migrate your .env file to AWS SSM parameter store
 
 ## Steps
 1. Clone this project and run `npm i` to install dependencies
-2. Copy the .env file you want to migrate to the root of this project
-/This app runs on  your machine and  uses official aws-sdk to upload, your parameters won’t go anywhere else/
+2. Copy the .env file you want to migrate to the root of this project (This app runs on  your machine and  uses official AWS SDK to upload, your parameters won’t go anywhere else)
 3. In the .env file, add a dash ‘-‘ before each secure env variable name (or customize this in `app.js`) to encrypt it with the provided KMS key ID.
 4. In `app.js` Specify AWS region, SSM parameters path, and KMS key ID encrypt secure strings.
 5. If you haven’t used AWS CLI on your machine before and AWS IAM is not configured, specify IAM  `accessKeyId` and `secretAccessKey` in `app.js`.
