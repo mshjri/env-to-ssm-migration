@@ -1,0 +1,31 @@
+{
+  "name": "env-to-ssm-migration",
+  "version": "1.0.0",
+  "description": "Migrate your .env file to AWS SSM parameter store",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mshjri/env-to-ssm-migration.git"
+  },
+  "keywords": [
+    "migration",
+    "AWS",
+    "SSM",
+    "env",
+    "dotenv",
+    "parameter store"
+  ],
+  "author": "Omar Almashjari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mshjri/env-to-ssm-migration/issues"
+  },
+  "homepage": "https://github.com/mshjri/env-to-ssm-migration#readme",
+  "dependencies": {
+    "aws-sdk": "^2.750.0",
+    "dotenv": "^8.2.0"
+  }
+}
