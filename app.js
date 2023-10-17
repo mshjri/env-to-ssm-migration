@@ -22,7 +22,7 @@ for (let i = 0; i < envsFiles.length; i++) {
   let path = `/${nameProject}/${environment[i]}/`; // Optionally setup a path for the parameter, otherwise leave empty
 
   // load .env and parse parameters
-  const Buffer = fs.readFileSync("./.env", (err) => {
+  const Buffer = fs.readFileSync(`./${envsFiles[i]}`, (err) => {
     if (err) throw err;
   });
   const env = dotenv.parse(Buffer);
